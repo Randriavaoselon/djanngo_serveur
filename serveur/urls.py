@@ -18,6 +18,14 @@ urlpatterns = [
     path('client-screenshots/<int:client_id>/', views.get_client_screenshots, name='get_client_screenshots'),
     path('delete-client-screenshots/<int:client_id>/', views.delete_client_screenshots, name='delete_client_screenshots'),
     path('api/get-directory-content/', views.get_directory_content, name='get_directory_content'),
+
+
+   
+    path('video-feed/', views.client_video_feed, name='client_video_feed'),
+    path('active-clients/', views.get_active_clients, name='get_active_clients'),
+    path('all-clients/', views.get_all_clients, name='get_all_clients'),
+
+
 ]
 
 
